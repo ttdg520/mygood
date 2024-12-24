@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="tv.gaypan.cf";
+        url.hostname="107.189.3.36";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
